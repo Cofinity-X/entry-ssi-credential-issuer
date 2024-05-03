@@ -42,6 +42,8 @@ ingress:
             port: 8080
 
 issuer:
+  image:
+    tag: "f301930a7d17bcd2a9f76b9eb3891a9d35e4fa30"
   swaggerEnabled: true
   credential:
     issuerDid: "did:web:dim-static-prod.dis-cloud-prod.cfapps.eu10-004.hana.ondemand.com:dim-hosted:2f45795c-d6cc-4038-96c9-63cedc0cd266:holder-iatp"
@@ -55,12 +57,16 @@ issuer:
     clientSecret: "<path:portal/data/ssi-credential-issuer/int/portal#clientSecret>"
 
 issuermigrations:
+  image:
+    tag: "f301930a7d17bcd2a9f76b9eb3891a9d35e4fa30"
   logging:
     default: "Debug"
   seeding:
     testDataEnvironments: "consortia"
 
 processesworker:
+  image:
+    tag: "f301930a7d17bcd2a9f76b9eb3891a9d35e4fa30"
   logging:
     default: "Debug"
   portal:
@@ -74,6 +80,8 @@ processesworker:
         encryptionKey: "<path:portal/data/ssi-credential-issuer/int/wallet#encryptionKey0>"
 
 credentialExpiry:
+  image:
+    tag: "f301930a7d17bcd2a9f76b9eb3891a9d35e4fa30"
   logging:
     default: "Debug"
 
