@@ -2,6 +2,22 @@ apiVersion: v1
 entries:
   ssi-credential-issuer:
   - apiVersion: v2
+    appVersion: 1.1.0
+    created: "2024-08-08T08:15:23.28331989Z"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 12.12.x
+    description: Helm chart for SSI Credential Issuer
+    digest: 962147088b782fee614af15c5df8dcec2df418aeadcbcc7b39b8b023199d20c5
+    home: https://github.com/eclipse-tractusx/ssi-credential-issuer
+    name: ssi-credential-issuer
+    type: application
+    urls:
+    - https://github.com/Cofinity-X/entry-ssi-credential-issuer/releases/download/ssi-credential-issuer-1.1.0/ssi-credential-issuer-1.1.0.tgz
+    version: 1.1.0
+  - apiVersion: v2
     appVersion: 1.0.0-rc.6
     created: "2024-05-24T11:00:03.457226574Z"
     dependencies:
@@ -97,4 +113,4 @@ entries:
     urls:
     - https://github.com/eclipse-tractusx/ssi-credential-issuer/releases/download/ssi-credential-issuer-1.0.0-rc.1/ssi-credential-issuer-1.0.0-rc.1.tgz
     version: 1.0.0-rc.1
-generated: "2024-05-24T11:00:03.457250478Z"
+generated: "2024-08-08T08:15:23.283359033Z"
